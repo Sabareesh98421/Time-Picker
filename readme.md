@@ -33,5 +33,3 @@ The provided JavaScript code consists of the following key components:
 The code has been tested and is compatible with major web browsers, including Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge.
 
 ## License
-
-This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE).
