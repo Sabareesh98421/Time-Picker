@@ -1,0 +1,396 @@
+/* analog.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+*
+{
+    padding:0;
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    color: #fff;
+    cursor: default;
+    user-select: none;
+    transition:  linear;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#18191e;
+    flex-flow: column;
+}
+.container
+{
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#conta_hr
+{
+    height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#conta_min
+{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle_bg_reference
+{
+    height: 305px;
+    width:305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    z-index: 100;
+    
+}
+.circle_bg_reference::before
+{
+    content: "";
+    position: absolute;
+    height:110px;
+    width:5px;
+    background: #C147E9;
+    border-radius:50px ;
+    top:210px;
+    box-shadow: 0 0 10px 0.5px  #C147E9;
+    border:1px solid #efbef1;
+    z-index:-1;
+    transform-origin: bottom center;
+    transform: rotate(var(--hd,0deg));
+}
+.circle_bg_reference_b /*Minutes  */
+{
+    height: 205px;
+    width: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 200;
+
+}
+.circle_bg_reference_b::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 5px;
+    background: #6527BE;
+    border-radius: 50px;
+    z-index:-200;
+    top: 200px;
+    box-shadow: 0 0 10px 0.5px #6527BE;
+    border: 1px solid #efbef1;
+    transform-origin: bottom center;
+    transform: rotate(var(--md, 0deg));
+}
+.opps
+{
+    height:300px;
+    width:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    position: absolute;
+    /* border-left:2px solid red */
+}
+.opps_min
+{
+    height: 300px;
+    width: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    position: absolute;
+    /* left:640px */
+}
+i:hover,i:active,i:focus
+{
+    background:#C147E9;
+    box-shadow: 0 0 10px 0.5px #C147E9;
+    border-top:2px solid ;
+    border-radius:50%;
+}
+.hr
+{
+    height:30px;
+    width:30px;
+    display: flex;
+    transform: rotate(-180deg);
+    align-items: center;
+    justify-content: center;
+}
+.min
+{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    transform: rotate(-180deg);
+    align-items: center;
+    justify-content: center;
+}
+.min:hover,.min:active,.min:focus
+{
+    background: #6527BE;
+    box-shadow: 0 0 10px 0.5px #6527BE;
+    border-top: 2px solid;
+    border-radius: 50%;
+}   
+#opps1 /*12 - 6*/
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+}
+#hrs12,#hrs6
+{
+    transform: rotate(360deg);
+}
+
+#opps2{ /* 3 - 9 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(90deg);
+}
+#hrs3,#hrs9
+{
+    transform: rotate(-90deg);
+}
+
+#opps3 /* 1 - 7*/
+{
+    transform: rotate(30deg);
+}
+#hrs1
+{
+    transform: rotate(-30deg);
+}
+#hrs7 {
+    transform: rotate(0deg);
+}
+
+#opps4 /* 2 - 8*/
+{
+    transform: rotate(60deg);
+}
+#hrs2
+{
+    transform: rotate(-90deg);
+}
+#hrs8 {
+    transform: rotate(-90deg);
+}
+
+#opps5 /* 4 - 10*/
+{
+    transform: rotate(120deg);
+}
+/* #hrs4 */
+#hrs10
+{
+    transform: rotate(240deg);
+}
+#hrs4
+{
+    transform: rotate(240deg);
+}
+#opps6
+{
+    
+    transform: rotate(150deg);
+}
+.min_ac
+{
+    height:15px;
+    width:15px;
+    display: flex;
+    transform: rotate(0deg);
+    align-items: center;
+    justify-content: center;
+}
+.min_ac:hover,
+.min_ac:active,
+.min_ac:focus
+{
+    background: #6527BE;
+    box-shadow: 0 0 10px 0.5px #6527BE;
+    border-top: 2px solid;
+    border-radius: 50%;
+}
+.opps_min_ac
+{
+    height: 280px;
+    width:15px;
+    font-size: 9px;
+}
+#opps7
+{
+    transform: rotate(6deg);
+}
+#opps8
+{
+    transform: rotate(12deg);
+}
+#opps9
+{
+    transform: rotate(18deg);
+}
+#opps10
+{
+    transform: rotate(24deg);
+}
+/* after and between  5-10 and 35-40 */
+#opps11
+{
+    transform: rotate(36deg);
+}
+#opps12
+{
+    transform: rotate(42deg);
+}
+#opps13
+{
+    transform: rotate(48deg);
+}
+#opps14
+{
+    transform: rotate(54deg);
+}
+/* after and between 10 - 15 and 40 -45*/
+#opps15
+{
+    transform: rotate(66deg);
+}
+#opps16
+{
+    transform: rotate(72deg);
+}
+#opps17
+{
+    transform: rotate(78deg);
+}
+#opps18
+{
+    transform: rotate(84deg);
+}
+/* After and between 16 - 20 and 46 - 50 */
+#opps19
+{
+    transform: rotate(96deg);
+}
+#opps20
+{
+    transform: rotate(102deg);
+}
+#opps21
+{
+    transform: rotate(108deg);
+}
+#opps22
+{
+    transform: rotate(114deg);
+}
+#opps23
+{
+    transform: rotate(126deg);
+}
+#opps24
+{
+    transform: rotate(132deg);
+}
+#opps25
+{
+    transform: rotate(138deg);
+}
+#opps26
+{
+    transform: rotate(144deg);
+}
+#opps27
+{
+    transform: rotate(156deg);
+}
+#opps28
+{
+    transform: rotate(162deg);
+}
+#opps29
+{
+    transform: rotate(168deg);
+}
+#opps30
+{
+    transform: rotate(174deg);
+}
+
+.testout{
+    height: 60px;
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    position: relative;
+    bottom: 100px;
+    right:40px
+
+}
+#t_hrs{
+    padding:5px;
+    font-weight:bolder;
+    font-size:large;
+}
+#t_min
+{
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+.day-night
+{
+    height:60px;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+
+#am,#pm
+{
+    height:30px;
+    width:50px;
+    color:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+#am:active,#am:focus,#am:hover
+{
+    color: #C147E9
+}
+#pm:active,#pm:focus,#pm:hover
+{
+    color: #6527BE
+}
