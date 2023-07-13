@@ -87,7 +87,7 @@ body{
     content: "";
     position: absolute;
     height: 100px;
-    width: 5px;
+    width: 1px;
     background: #6527BE;
     border-radius: 50px;
     z-index:-200;
