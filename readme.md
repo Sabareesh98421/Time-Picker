@@ -31,5 +31,3 @@ The provided JavaScript code consists of the following key components:
 ## Compatibility
 
 The code has been tested and is compatible with major web browsers, including Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge.
-
-## License
