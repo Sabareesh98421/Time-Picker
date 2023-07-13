@@ -91,7 +91,7 @@ body{
     background: #6527BE;
     border-radius: 50px;
     z-index:-200;
-    top: 200px;
+    top: 215px;
     box-shadow: 0 0 10px 0.5px #6527BE;
     border: 1px solid #efbef1;
     transform-origin: bottom center;
@@ -125,6 +125,7 @@ i:hover,i:active,i:focus
     box-shadow: 0 0 10px 0.5px #C147E9;
     border-top:2px solid ;
     border-radius:50%;
+    /* -webkit-backdrop-filter: blur(20px); */
 }
 .hr
 {
@@ -150,6 +151,7 @@ i:hover,i:active,i:focus
     box-shadow: 0 0 10px 0.5px #6527BE;
     border-top: 2px solid;
     border-radius: 50%;
+    /* -webkit-backdrop-filter: blur(20px); */
 }   
 #opps1 /*12 - 6*/
 {
@@ -224,6 +226,7 @@ i:hover,i:active,i:focus
     transform: rotate(0deg);
     align-items: center;
     justify-content: center;
+    /* border:0.2px solid red  */
 }
 .min_ac:hover,
 .min_ac:active,
@@ -233,10 +236,11 @@ i:hover,i:active,i:focus
     box-shadow: 0 0 10px 0.5px #6527BE;
     border-top: 2px solid;
     border-radius: 50%;
+    /* -webkit-backdrop-filter: blur(20px); */
 }
 .opps_min_ac
 {
-    height: 280px;
+    height: 290px;
     width:15px;
     font-size: 9px;
 }
